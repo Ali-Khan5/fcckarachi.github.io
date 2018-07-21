@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+@import 'variables';
+@import 'seperators';
+// BASE CSS
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $regular-font;
+    color: $primary-green;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+hr {
+    border: 0;
+    margin: 20px auto;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, $secondary-green, $primary-green, $secondary-green);
+    background-image: -moz-linear-gradient(left, $secondary-green, $primary-green, $secondary-green);
+    background-image: -ms-linear-gradient(left, $secondary-green, $primary-green, $secondary-green);
+    background-image: -o-linear-gradient(left, $secondary-green, $primary-green, $secondary-green);
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 30px;
+}
+
+footer {
+    p {
+        padding: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+p {
+    padding: 20px;
+}
+
+h1 {
+    @media screen and (max-width: $small-screen) {
+        font-size: 40px;
+    }
+}
+
+h2 {
+    @media screen and (max-width: $small-screen) {
+        font-size: 30px;
+    }
+}
+
+.nav-wrapper {
+    background-color: $primary-green;
+}
+
+.brand-logo {
+    img {
+        height: 64px;
+        padding: 15px;
+        @media screen and (max-width: $small-screen) {
+            height: 52px;
+            padding: 14px;
+            margin-left: 35px;
+        }
+    }
+}
+
+.circle-icon-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: $primary-green;
+}
+
+.circle-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.goals {
+    background-color: $primary-green;
+    color: $white;
+    border-radius: 5px;
+    height: 200px;
+    margin: 5px;
+    padding: 10px;
+    i {
+        margin: 15px;
+    }
+    h5 {
+        font-size: 17px;
+    }
+}
+
+.numbers {
+    background-color: $primary-green;
+    color: $white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    h5 {
+        font-size: 17px;
+    }
+}
+
+.flag {
+    padding: 30px;
+    width: 200px;
+}
+
+.carousel-item {
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.footer-links {
+    a {
+        margin: 0 25px;
+    }
+}
+
+.container {
+    width: 90%;
+}
+
+// HELPER CLASSES
+.hr-white {
+    background-image: -webkit-linear-gradient(left, $white, $primary-green, $white);
+    background-image: -moz-linear-gradient(left, $white, $primary-green, $white);
+    background-image: -ms-linear-gradient(left, $white, $primary-green, $white);
+    background-image: -o-linear-gradient(left, $white, $primary-green, $white);
+}
+
+.green-text {
+    color: $primary-green !important;
+}
+
+.green-background {
+    background-color: $secondary-green;
+    color: $white;
+}
+
+.dotted-underline-white {
+    border-bottom: 1px dotted $white;
+}
+
+.dotted-underline-green {
+    border-bottom: 1px dotted $primary-green;
+}
+
+.padding-top {
+    padding-top: 100px;
+}
+
+.spacer {
+    height: 50px;
+    width: 100%;
+}
+
+.remove-bottom-padding {
+    padding-bottom: 0;
+}
+
+.parallax-height {
+    height: 450px;
+    @media screen and (max-width: $small-screen) {
+        height: 300px;
+    }
+}
